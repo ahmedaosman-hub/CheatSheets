@@ -1,10 +1,21 @@
 /* Created by Ahmed Osman. 
 
+CSS should only be used for styling of content. 
 
-Should only be style 
+Where does CSS go?
+    Inline
+    In the head
+    In a separate file 
 
+CSS best practices are to put CSS in it's own file and link it from the <head>!
+    <link rel="stylesheet" href="css/style.css"> 
 
+CSS Syntax
+    (The selector) p (declaration block) {
+                    (The property) color : (The property value) red;                          
+                   } (end of declaration block) 
 
+CSS 
 
 
 
