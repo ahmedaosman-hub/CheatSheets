@@ -1,5 +1,9 @@
 /* Created by Ahmed Osman. 
 
+CSS Cascading Style Sheets
+    A style sheet language used for describing the presentation of a document written in a markup language such as HTML. 
+
+
 CSS should only be used for styling of content. 
 
 Where does CSS go?
@@ -15,15 +19,104 @@ CSS Syntax
                     (The property) color : (The property value) red;                          
                    } (end of declaration block) 
 
-CSS 
+    To use id selector: 
+                   #idName
+                        #zebra {                                                    <section>
+                            color: red;                                               <p> Hello, Family! </p>
+                        }                                                             <p id="zebra"> Hello, Zebra Family! </p>
+                                                                                    </section>
+  
+    To use class selector: 
+                    .className
+                        .bob {                                                      <section>
+                            color: red;                                                 <p class="bob"> Goodbye, Bob! </p>
+                        }                                                           </section>
 
+    To select an element that is the direct descendent of another element use
+                   parent > child                                                   <section>
+                        section > p {                                                 <p> Hello, Family! </p>
+                            color: red;                                             </section>
+                        }
 
+    To select an element that is inside of another element without being directly descended use parent element
+                    parent child                                                    <section>
+                        section p {                                                   <article>
+                            color: red;                                                    <p> Hello, Family! </p>
+                        }                                                             </article>
+                                                                                    </section>
 
+    To select an element that is the next sibling use
+                    previous sibling + next sibling
+                        p + p {                                                     <section>
+                            color: red;                                                 <p> Hello, Family!</p>
+                        }                                                               <p> Hello, Family!</p>
+                                                                                    </section>
+CSS Color
+    color: 
+        Word   color: black;
+        Hex    color: #FF0000;
+        RGBa   color: rgba(255,0,0,1);
+        HSLa   color: hsla(0,100%,50%,1);
 
+CSS Fonts 
+     Can be imported into the head from google. 
+        <link href="https://fonts.googleapis.com/googlefont" rel="stylesheet">
+    
+    font-family: 
+        List multiple fonts in case one doesn't work.
+            font-family: 'Source Sans Pro', 'Helvetica' sans-serif;
 
+    font-weight: 
+            font-weight: 600;
+        
+                   
+                   
+        font-style: 
+        font-weight:
+        text-decoration:
+        font-size:
 
+    List multiple fonts in case one doesn't work. 
+        font-family: "consolas", sans-serif
+    
+    Use google fonts for good searches of fonts. 
 
+CSS Borders
+    border-style:
+        border-width:
+        border-color:
+        border-radius: 
+        padding: 
 
+CSS Backgrounds
+    background-color: 
+        
 
+What makes a site responsive?
+    Fluid
+        Everything as a percentage.
+    
+    Elastic 
+        EMs
+          p {
+             font-size: 1em
+          }
+        
+        REM: Looks to the HTML element to figure out what to do. 
+          p {
+             font-size: 1rem;
+          }
+            
+    Content Decisions
+          How do we decide on what a website should looks like?
+            Try mobile first or starting small and going smaller.  
+
+    Media Queries 
+        Need to add <meta name="viewport" content="width=device-width, initial-scale=1">
+        Allows us to alter media depending on the parameters we set
+            @media screen and (max-width: 600px)
+                 h1 {
+                     color: blue;
+                 }
 
 */ 
